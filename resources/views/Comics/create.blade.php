@@ -8,14 +8,16 @@
 
 @section('content')
     <div class="container">
-        <form>
+        <form action="{{route('comics.store')}}" method="POST">
+            @csrf
+
             <div class="form-group">
               <label for="title">Titolo</label>
               <input type="text" class="form-control" name="title" placeholder="Inserisci titolo">
             </div>
             <div class="form-group">
               <label for="description">Descrizione</label>
-              <input type="text" class="form-control" name="description" placeholder="Password">
+              <input type="text" class="form-control" name="description" placeholder="Inserisci descrizione">
             </div>
             <div class="form-group">
                 <label for="thumb">Immagine</label>
