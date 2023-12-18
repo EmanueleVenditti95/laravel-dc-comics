@@ -16,6 +16,9 @@
 </head>
 
 <body>
+    <header>
+        @yield('title')
+    </header>
 
     <main class="bg-light">
         @yield('content')
