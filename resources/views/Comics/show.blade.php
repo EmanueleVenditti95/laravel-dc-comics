@@ -20,7 +20,7 @@
                 <a href="{{ route('comics.show',$comic) }}">{{ $comic->title }}</a>
             </li>
             <li>{{ $comic->description }}</li>
-            <li>{{ $comic->price }}</li>
+            <li>$ {{ $comic->price }}</li>
             <li>{{ $comic->series }}</li>
             <li>{{ $comic->sale_date }}</li>
             <li>{{ $comic->type }}</li>
