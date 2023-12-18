@@ -18,6 +18,7 @@
 <body>
     <header>
         @yield('title')
+        @yield('create_link')
     </header>
 
     <main class="bg-light">

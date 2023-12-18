@@ -6,6 +6,12 @@
     </div>
 @endsection
 
+@section('create_link')
+        <div class="container">
+            <a href="{{route('comics.create')}}">Inserisci un nuovo comic</a>
+        </div>
+@endsection
+
 @section('content')
     <div class="container">
         @forelse ($comics as $comic)
