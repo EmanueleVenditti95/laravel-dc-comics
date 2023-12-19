@@ -1,15 +1,11 @@
 @extends('layouts.app')
 
 @section('title')
-    <div class="container">
         <h1>{{$comic->title}}</h1>
-    </div>
 @endsection
 
 @section('create_link')
-        <div class="container">
-            <a href="{{route('comics.create')}}">Inserisci un nuovo comic</a>
-        </div>
+    <div><a href="{{route('comics.create')}}">Inserisci un nuovo comic</a></div>
 @endsection
 
 @section('content')
@@ -24,6 +20,7 @@
             <li>{{ $comic->series }}</li>
             <li>{{ $comic->sale_date }}</li>
             <li>{{ $comic->type }}</li>
+            <li><button class="btn btn-warning"><a href="{{ route('comics.edit',$comic) }}">modifica</a></button></li>
         </ul>
     </div>
 @endsection

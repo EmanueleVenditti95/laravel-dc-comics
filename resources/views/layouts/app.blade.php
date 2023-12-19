@@ -17,8 +17,11 @@
 
 <body>
     <header>
-        @yield('title')
-        @yield('create_link')
+        <div class="container mb-3">
+            @yield('title')
+            <a href="{{route('comics.index')}}">Home</a>
+            @yield('create_link')
+        </div>
     </header>
 
     <main class="bg-light">

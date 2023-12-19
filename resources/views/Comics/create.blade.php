@@ -1,9 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-    <div class="container">
         <h1>Inserisci comic :</h1>        
-    </div>
 @endsection
 
 @section('content')
