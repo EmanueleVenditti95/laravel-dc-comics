@@ -18,8 +18,15 @@
                     <li>
                         <a href="{{ route('comics.show',$comic) }}">{{ $comic->title }}</a>
                     </li>
-                    <li>
+                    <li class="d-flex">
                         <button class="btn btn-warning"><a href="{{ route('comics.edit',$comic) }}">modifica</a></button>
+                        <button class="btn btn-danger">
+                            <form action="{{route('comics.destroy',$comic)}}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <input type="submit" value="elimina">
+                            </form>
+                        </button>
                     </li>
                 </ul>
             </div>
