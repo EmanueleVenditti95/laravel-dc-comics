@@ -20,6 +20,9 @@
                 <li>
                     <a href="{{ route('comics.show',$comic) }}">{{ $comic->title }}</a>
                 </li>
+                <li>
+                    <button class="btn btn-warning"><a href="{{ route('comics.edit',$comic) }}">modifica</a></button>
+                </li>
             </ul>
 
         @empty
