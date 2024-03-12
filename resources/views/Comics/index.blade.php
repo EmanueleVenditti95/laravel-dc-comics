@@ -20,13 +20,13 @@
                     </li>
                     <li class="d-flex">
                         <button class="btn btn-warning"><a href="{{ route('comics.edit',$comic) }}">modifica</a></button>
-                        <button class="btn btn-danger">
+                        <div>
                             <form action="{{route('comics.destroy',$comic)}}" method="POST">
                                 @csrf
                                 @method('DELETE')
-                                <input type="submit" value="elimina">
+                                <input class="btn btn-danger" type="submit" value="elimina">
                             </form>
-                        </button>
+                        </div>
                     </li>
                 </ul>
             </div>
